@@ -17,7 +17,7 @@ const awards = [
       'Opens with a confident butterscotch nose, yielding to a midpalate of compressed air and commercial-grade margarine that, against all reasonable expectation, delivers. The finish is brief but honest — a faint sweetness that reminds you of airports and Tuesday mornings. Pairs well with self-checkout anxiety and the 7:48 tram.',
   },
   {
-    rank: 3,
+    rank: 2,
     title: 'Best Commuter Breakfast',
     item: 'AH Kaasbroodje',
     description:
@@ -27,7 +27,7 @@ const awards = [
       'A muscular cheese presence dominates the opening, supported by a pastry shell that understands its role as vehicle rather than protagonist. The Gouda — or something adjacent to Gouda — asserts itself with an unpretentious warmth. Notes of industrial oven, genuine satisfaction, and the quiet courage of not caring what the barista thinks. Pairs with bicycle commutes and mild existential purpose.',
   },
   {
-    rank: 5,
+    rank: 3,
     title: 'Best Cheese Twist in a Functional Democracy',
     item: 'AH Kaas-Ui Broodje',
     description:
@@ -37,7 +37,7 @@ const awards = [
       'The onion arrives first — caramelized, assertive, unapologetic — followed by a cheese note that occupies the midpalate like a warm handshake from someone who genuinely means it. The pastry provides structural integrity without ego. Aftertaste carries hints of democratic values and affordable civic infrastructure. Pairs with municipal elections and a general sense that things are, fundamentally, fine.',
   },
   {
-    rank: 6,
+    rank: 4,
     title: 'Best Warm Snack Within 6 Minutes of Your House',
     item: 'AH Saucijzenbroodje',
     description:
