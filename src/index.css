@@ -44,10 +44,3 @@ body {
 .animate-slow-spin {
   animation: slow-spin 20s linear infinite;
 }
-
-@media (pointer: fine) {
-  .custom-cursor-active,
-  .custom-cursor-active * {
-    cursor: none !important;
-  }
-}
