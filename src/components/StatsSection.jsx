@@ -68,19 +68,6 @@ export default function StatsSection() {
             </ScrollReveal>
           ))}
         </div>
-
-        {/* Decorative bottom rule */}
-        <ScrollReveal delay={0.6}>
-          <div className="mt-14 sm:mt-16 flex items-center justify-center gap-3">
-            <span className="block w-12 h-px bg-gold/30" />
-            <span className="block w-1.5 h-1.5 rotate-45 bg-gold/50" />
-            <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-gold-light/50">
-              Verified Metrics
-            </span>
-            <span className="block w-1.5 h-1.5 rotate-45 bg-gold/50" />
-            <span className="block w-12 h-px bg-gold/30" />
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   )

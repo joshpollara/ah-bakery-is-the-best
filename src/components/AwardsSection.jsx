@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
 import SectionHeading from '../components/SectionHeading'
 import AwardCard from '../components/AwardCard'
+import CroissantIllustration from '../components/CroissantIllustration'
+import Saucijzenbroodje from '../components/illustrations/Saucijzenbroodje'
 
 const awards = [
   {
@@ -15,16 +17,6 @@ const awards = [
       'Opens with a confident butterscotch nose, yielding to a midpalate of compressed air and commercial-grade margarine that, against all reasonable expectation, delivers. The finish is brief but honest — a faint sweetness that reminds you of airports and Tuesday mornings. Pairs well with self-checkout anxiety and the 7:48 tram.',
   },
   {
-    rank: 2,
-    title: 'Best I-Only-Came-In-For-Milk Pastry',
-    item: 'AH Chocoladebroodje',
-    description:
-      'You entered for dairy. You leave with chocolate encased in butter. This is not weakness. This is the bakery working as intended.',
-    score: 9.6,
-    tastingNotes:
-      'The nose presents dark cacao with industrial precision — not artisanal, but authoritative. On the palate, a surprisingly complex interplay between laminated pastry and chocolate that has been heated to the exact temperature of capitulation. The finish lingers with notes of convenience and quiet personal victory. Pairs with a shopping list you have already abandoned.',
-  },
-  {
     rank: 3,
     title: 'Best Commuter Breakfast',
     item: 'AH Kaasbroodje',
@@ -33,16 +25,6 @@ const awards = [
     score: 9.7,
     tastingNotes:
       'A muscular cheese presence dominates the opening, supported by a pastry shell that understands its role as vehicle rather than protagonist. The Gouda — or something adjacent to Gouda — asserts itself with an unpretentious warmth. Notes of industrial oven, genuine satisfaction, and the quiet courage of not caring what the barista thinks. Pairs with bicycle commutes and mild existential purpose.',
-  },
-  {
-    rank: 4,
-    title: 'Best Casual Dessert Procurement',
-    item: 'AH Appelflap',
-    description:
-      'You did not plan dessert. Dessert found you in aisle seven. The appelflap asks nothing of you except €1.29 and the willingness to accept that life can be this simple.',
-    score: 9.3,
-    tastingNotes:
-      'Initial aromatics of stewed apple and cinnamon give way to a pastry that shatters with democratic enthusiasm. The filling is sweet without apology — a fruit compote that has made peace with its processed origins and emerged stronger for it. Finishes with a whisper of nutmeg and the satisfaction of a dessert that required zero forethought. Pairs with park benches and the absence of ambition.',
   },
   {
     rank: 5,
@@ -68,7 +50,7 @@ const awards = [
 
 export default function AwardsSection() {
   return (
-    <section className="bg-white py-24 sm:py-32 lg:py-40">
+    <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         <ScrollReveal>
           <SectionHeading
@@ -78,23 +60,35 @@ export default function AwardsSection() {
           />
         </ScrollReveal>
 
-        <div className="mt-16 sm:mt-20 lg:mt-24 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-          {awards.map((award, i) => (
-            <ScrollReveal key={award.rank} delay={i * 0.08}>
-              <AwardCard
-                rank={award.rank}
-                title={award.title}
-                item={award.item}
-                description={award.description}
-                score={award.score}
-                tastingNotes={award.tastingNotes}
-              />
-            </ScrollReveal>
-          ))}
+        <div className="relative mt-12 sm:mt-16 lg:mt-20">
+          {/* Decorative croissant — top-left of grid, hidden on mobile */}
+          <div className="hidden md:block absolute -top-8 -left-12 lg:-left-16 pointer-events-none">
+            <CroissantIllustration className="w-28 lg:w-32 opacity-50" />
+          </div>
+
+          {/* Decorative saucijzenbroodje — bottom-right of grid, hidden on mobile */}
+          <div className="hidden md:block absolute -bottom-8 -right-10 lg:-right-14 pointer-events-none">
+            <Saucijzenbroodje className="w-24 lg:w-28 opacity-50" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+            {awards.map((award, i) => (
+              <ScrollReveal key={award.rank} delay={i * 0.08}>
+                <AwardCard
+                  rank={award.rank}
+                  title={award.title}
+                  item={award.item}
+                  description={award.description}
+                  score={award.score}
+                  tastingNotes={award.tastingNotes}
+                />
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
 
         <ScrollReveal delay={0.3}>
-          <div className="mt-16 text-center">
+          <div className="mt-12 text-center">
             <Link
               to="/rankings"
               className="inline-flex items-center gap-3 font-sans font-semibold text-navy text-base tracking-wide hover:text-gold-dark transition-colors duration-300 group"
