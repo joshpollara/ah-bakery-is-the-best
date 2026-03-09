@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FBF7F0;
+  --color-cream-dark: #F0E8D8;
+  --color-navy: #1B2A4A;
+  --color-navy-light: #2C3E6B;
+  --color-gold: #C8A45C;
+  --color-gold-light: #E8D5A0;
+  --color-gold-dark: #A68B3C;
+  --color-ah-blue: #00A0E2;
+  --color-ah-blue-dark: #0080B8;
+  --color-warm-red: #C4453C;
+  --color-warm-gray: #6B6560;
+  --color-warm-gray-light: #A09890;
+
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-gold-light);
+  color: var(--color-navy);
+}
+
+@keyframes slow-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 20s linear infinite;
+}
