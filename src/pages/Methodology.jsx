@@ -122,7 +122,7 @@ export default function Methodology() {
                 <motion.div
                   whileHover={{ x: 4 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                  className="bg-cream border border-gold/15 rounded-lg p-8"
+                  className="bg-cream border border-gold/15 rounded-lg p-5 sm:p-8"
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-8">
                     <div className="flex items-baseline gap-4">
@@ -181,7 +181,7 @@ export default function Methodology() {
             {results.map((result, i) => (
               <ScrollReveal key={result.name} delay={i * 0.12}>
                 <div
-                  className={`flex items-center justify-between rounded-lg px-8 py-6 ${
+                  className={`flex items-center justify-between rounded-lg px-5 sm:px-8 py-5 sm:py-6 ${
                     result.highlight
                       ? 'bg-gold/10 border-2 border-gold'
                       : 'bg-navy-light/50 border border-warm-gray-light/15'

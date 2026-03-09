@@ -98,7 +98,7 @@ export default function About() {
             {principles.map((principle, i) => (
               <ScrollReveal key={i} delay={i * 0.08}>
                 <li className="flex gap-6">
-                  <span className="flex-shrink-0 font-serif text-4xl font-bold text-gold leading-none">
+                  <span className="flex-shrink-0 font-serif text-3xl sm:text-4xl font-bold text-gold leading-none">
                     {i + 1}
                   </span>
                   <p className="text-warm-gray text-lg leading-relaxed pt-1">
@@ -128,7 +128,7 @@ export default function About() {
                 <motion.div
                   whileHover={{ y: -4 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                  className="bg-cream-dark border border-gold/15 rounded-lg p-8"
+                  className="bg-cream-dark border border-gold/15 rounded-lg p-6 sm:p-8"
                 >
                   <p className="font-mono text-xs tracking-[0.2em] uppercase text-gold">
                     {member.role}

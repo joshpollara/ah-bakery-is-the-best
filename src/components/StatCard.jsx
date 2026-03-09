@@ -8,7 +8,7 @@ export default function StatCard({ number, label, suffix = '', description }) {
   return (
     <div
       ref={ref}
-      className="bg-cream border border-gold/20 rounded-lg p-8 text-center transition-shadow duration-300 hover:shadow-lg"
+      className="bg-cream border border-gold/20 rounded-lg p-5 sm:p-8 text-center transition-shadow duration-300 hover:shadow-lg"
     >
       <p className="font-serif text-5xl sm:text-6xl font-bold text-gold leading-none">
         {count}

@@ -5,20 +5,20 @@ export default function AwardCard({ rank, title, item, description, score }) {
     <motion.div
       whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(27, 42, 74, 0.12)' }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      className="bg-cream border border-gold/20 rounded-lg p-8 cursor-default"
+      className="bg-cream border border-gold/20 rounded-lg p-5 sm:p-8 cursor-default"
     >
       {/* Rank */}
-      <span className="font-serif text-5xl font-bold text-gold leading-none">
+      <span className="font-serif text-4xl sm:text-5xl font-bold text-gold leading-none">
         {rank}
       </span>
 
       {/* Award category title */}
-      <p className="mt-4 font-mono text-xs tracking-[0.2em] uppercase text-warm-gray">
+      <p className="mt-3 sm:mt-4 font-mono text-xs tracking-[0.2em] uppercase text-warm-gray">
         {title}
       </p>
 
       {/* Winning item */}
-      <h3 className="mt-2 font-serif text-2xl font-semibold text-navy">
+      <h3 className="mt-2 font-serif text-xl sm:text-2xl font-semibold text-navy">
         {item}
       </h3>
 
