@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#0F1B33"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top gold rule -->
+  <rect x="80" y="60" width="1040" height="1" fill="#C8A45C" opacity="0.5"/>
+
+  <!-- Bottom gold rule -->
+  <rect x="80" y="570" width="1040" height="1" fill="#C8A45C" opacity="0.5"/>
+
+  <!-- Left decorative vertical rule -->
+  <rect x="80" y="60" width="1" height="510" fill="#C8A45C" opacity="0.2"/>
+
+  <!-- Right decorative vertical rule -->
+  <rect x="1120" y="60" width="1" height="510" fill="#C8A45C" opacity="0.2"/>
+
+  <!-- Seal: outer ring -->
+  <circle cx="600" cy="200" r="95" fill="none" stroke="#C8A45C" stroke-width="2.5"/>
+
+  <!-- Seal: inner ring -->
+  <circle cx="600" cy="200" r="80" fill="none" stroke="#C8A45C" stroke-width="1" opacity="0.6"/>
+
+  <!-- Seal: decorative dots on outer ring -->
+  <circle cx="600" cy="103" r="3" fill="#C8A45C"/>
+  <circle cx="600" cy="297" r="3" fill="#C8A45C"/>
+  <circle cx="503" cy="200" r="3" fill="#C8A45C"/>
+  <circle cx="697" cy="200" r="3" fill="#C8A45C"/>
+
+  <!-- Seal: #1 text -->
+  <text x="600" y="210" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="bold" fill="#C8A45C">#1</text>
+
+  <!-- Seal: BAKERY text -->
+  <text x="600" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="normal" fill="#C8A45C" letter-spacing="6">BAKERY</text>
+
+  <!-- Small decorative lines flanking seal -->
+  <rect x="200" y="200" width="120" height="1" fill="#C8A45C" opacity="0.3"/>
+  <rect x="880" y="200" width="120" height="1" fill="#C8A45C" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="600" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#FBF7F0">The Best Bakery</text>
+  <text x="600" y="445" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#FBF7F0">in Amsterdam</text>
+
+  <!-- Subline -->
+  <text x="600" y="492" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#FBF7F0" opacity="0.8">is inside a supermarket.</text>
+
+  <!-- Gold separator line -->
+  <rect x="520" y="515" width="160" height="1.5" fill="#C8A45C" opacity="0.6"/>
+
+  <!-- Bottom text -->
+  <text x="600" y="550" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" fill="#C8A45C" letter-spacing="3" opacity="0.7">AMSTERDAM BAKERY INSTITUTE</text>
+</svg>

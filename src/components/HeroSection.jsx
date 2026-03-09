@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Seal from '../components/Seal'
+import CroissantIllustration from '../components/CroissantIllustration'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -105,19 +106,20 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Seal — right on desktop, centered below on mobile */}
+          {/* Visual column — seal + croissant illustration */}
           <motion.div
             variants={fadeIn}
             initial="hidden"
             animate="visible"
-            className="flex-shrink-0 lg:mt-12"
+            className="flex-shrink-0 flex flex-col items-center gap-8 lg:gap-10 lg:mt-8"
           >
             <div className="hidden lg:block">
-              <Seal size={240} />
+              <Seal size={220} />
             </div>
             <div className="lg:hidden">
-              <Seal size={180} />
+              <Seal size={160} />
             </div>
+            <CroissantIllustration className="w-56 sm:w-64 lg:w-72 opacity-90" />
           </motion.div>
         </div>
       </div>
